@@ -6,6 +6,7 @@ body {
 nav {
     font-family: "Walter Turncoat", cursive;
     font-weight: 400;
+    background-color: #056CF2;
 
 }
 
@@ -17,7 +18,6 @@ nav {
     content: "\2630";
     color: rgb(15, 14, 14);
     
-
 }
 #myButton {
     font-size: 2rem;
@@ -36,7 +36,9 @@ nav {
 ul.menuLinks li a {
     display: block;
     padding: .75rem 2vw;
-    color: rgb(19, 17, 17);
+    color: rgb(253, 253, 253);
+    font-size: 1.5rem;
+    font-weight: 400;
     text-decoration: none;
 }
 
