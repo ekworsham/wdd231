@@ -9,6 +9,31 @@ nav {
     background-color: #056CF2;
 }
 
+.filterMenuLinks {
+    min-height: 50px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    background-color: #BF2604; 
+    list-style-type: none;
+    
+}
+
+.filterMenuLinks li {
+    margin: 10px;
+    color: rgb(230, 15, 15);
+    border: 3px solid black;
+    min-width: 100px;
+    background-color: yellow;
+    
+}
+
+.filterMenuLinks a:hover {
+    background-color: #056CF2;
+    cursor: pointer;
+}
 
 .flexbox-container {
     display: flex;
@@ -72,9 +97,9 @@ ul.menuLinks li a {
     text-decoration: none;
 }
 
-li.currrent-menu-item a {
+/* li.currrent-menu-item a {
     background-color: black;
-}
+} */
 
 ul.menuLinks {
     display: none;
@@ -90,7 +115,9 @@ ul.menuLinks.open {
     display: block;
 }
 
-
+footer {
+    font-size: 1.5rem;
+}
 
 /* Color Theme Swatches in Hex */
 .color-theme_WHO-1-hex { color: #03258C; }

@@ -24,7 +24,7 @@
     <nav>
         <!-- button id and menuLinks is for hamburger icon -->
         <button id="myButton" aria-label="button"></button>
-        <ul class="menuLinks">
+            <ul class="menuLinks">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">GitHub profile</a></li>
@@ -35,24 +35,26 @@
     
 
     <main>
+        
+        
+
         <div class="flexbox-container">
             <div class="flexbox-item flexbox-item-1">
-                <section>
-                    <h1>Course Work</h1>
-                </section>
+                <h1>Course Work</h1>
             </div>
 
             <div class="flexbox-item flexbox-item-2">
-                <section>
-                    <h1>Whoville, Legume</h1>
-                </section>
+                <h1>Whoville, Legume</h1>
             </div>
 
-            <div class="flexbox-item flexbox-item-3">
-                <section>
-                    <h1>Web and Computer Progamming Certificate</h1>
-                    <div id="courseList"></div>
-                </section>
+            <div class="flexbox-item flexbox-item-3">  
+                <h1>Web and Computer Progamming Certificate</h1>
+                <div class="filterButtons">
+                    <button id="allButton">ALL</button>
+                    <button id="cseButton">CSE</button>
+                    <button id="wddButton">WDD</button>
+                </div>
+                <div id="courseList"></div>                
             </div>
         </div> 
     </main>

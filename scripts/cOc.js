@@ -1,7 +1,8 @@
 let currentYear = document.querySelector("#currentYear");
 let lastModified = document.querySelector("#lastModified");
 const today = new Date();
-currentYear.textContent = `Last Modification: ${document.lastModified}`;
+currentYear.textContent = today.getFullYear();
+lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
 
 const hamburgerElement = document.querySelector('#myButton');
@@ -11,14 +12,6 @@ hamburgerElement.addEventListener('click', () => {
     navElement.classList.toggle('open');
     hamburgerElement.classList.toggle('open');
 })
-
-
-
-
-
-
-
-
 
 
 const courses = [
@@ -112,9 +105,27 @@ function renderCourses(filteredCourses) {
         <p>${element.subject} ${element.number}</p>
         `;
         courseList.appendChild(course);
-    });
-    
-    
+    }); 
 }
-
 renderCourses(courses)
+
+const allButton = document.querySelector("#allButton");
+allButton.addEventListener('click', ()=>{
+    renderCourses(courses)
+});
+
+const cseButton = document.querySelector("#cseButton");
+cseButton.addEventListener('click', ()=>{
+    const cseCourses = courses.filter(course => {
+       return course.subject === 'CSE';
+    })
+    renderCourses(cseCourses)
+});
+
+const wddButton = document.querySelector("#wddButton");
+wddButton.addEventListener('click', ()=>{
+    const cseCourses = courses.filter(course => {
+       return course.subject === 'WDD';
+    })
+    renderCourses(cseCourses)
+});

@@ -8,12 +8,17 @@
         justify-content: space-around;
     }
 
-    ul.menuLinks a:hover {
+    /* ul.menuLinks a:hover {
         background-color: #021859;
-    }
+    } */
 
-    .container {
+    /* .container {
         display: flex;
         flex-wrap: wrap;
-    } 
+    }  */
+
+    ul.filterMenuLinks, ul.filterMenuLinks.open {
+        display: flex;
+        justify-content: space-around;
+    }
 }
