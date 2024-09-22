@@ -1,0 +1,76 @@
+body {
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 400;
+}
+
+nav {
+    font-family: "Walter Turncoat", cursive;
+    font-weight: 400;
+
+}
+
+
+
+/* This is for the hamburger  icon */
+
+#myButton::before {
+    content: "\2630";
+    color: rgb(15, 14, 14);
+    
+
+}
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 44px;
+    text-align: right;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: 0;
+    right: 2vw;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: .75rem 2vw;
+    color: rgb(19, 17, 17);
+    text-decoration: none;
+}
+
+li.currrent-menu-item a {
+    background-color: black;
+}
+
+ul.menuLinks {
+    display: none;
+    list-style-type: none; /* effects large */
+}
+
+#myButton.open::before {
+    content: "x";
+    color: rgb(7, 7, 7);
+}
+
+ul.menuLinks.open {
+    display: block;
+}
+
+
+
+/* Color Theme Swatches in Hex */
+.color-theme_WHO-1-hex { color: #03258C; }
+.color-theme_WHO-2-hex { color: #021859; }
+.color-theme_WHO-3-hex { color: #056CF2; }
+.color-theme_WHO-4-hex { color: #F2CB05; }
+.color-theme_WHO-5-hex { color: #BF2604; }
+
+/* Color Theme Swatches in RGBA */
+.color-theme_WHO-1-rgba { color: rgba(3, 37, 140, 1); }
+.color-theme_WHO-2-rgba { color: rgba(2, 24, 89, 1); }
+.color-theme_WHO-3-rgba { color: rgba(5, 108, 242, 1); }
+.color-theme_WHO-4-rgba { color: rgba(242, 203, 5, 1); }
+.color-theme_WHO-5-rgba { color: rgba(191, 38, 4, 1); }
+
