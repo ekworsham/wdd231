@@ -12,6 +12,15 @@ hamburgerElement.addEventListener('click', () => {
     hamburgerElement.classList.toggle('open');
 })
 
+
+
+
+
+
+
+
+
+
 const courses = [
     {
         subject: 'CSE',
@@ -91,3 +100,21 @@ const courses = [
         completed: false
     }
 ]
+
+function renderCourses(filteredCourses) {
+    const courseList = document.querySelector(`#courseList`);
+    courseList.innerHTML = "";
+
+    filteredCourses.forEach(element => {
+        const course = document.createElement('div');
+        course.setAttribute('class', 'courseItem');
+        course.innerHTML = `
+        <p>${element.subject} ${element.number}</p>
+        `;
+        courseList.appendChild(course);
+    });
+    
+    
+}
+
+renderCourses(courses)
