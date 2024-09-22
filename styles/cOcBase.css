@@ -1,14 +1,44 @@
 body {
     font-family: "Mountains of Christmas", serif;
-    font-weight: 400;
+    
 }
 
 nav {
     font-family: "Walter Turncoat", cursive;
     font-weight: 400;
     background-color: #056CF2;
-
 }
+
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    background-color: #BF2604;
+}
+
+.flexbox-item {
+    width: 280px;
+    margin: 10px;
+    border: 3px solid black;
+    background-color: yellow;
+}
+
+.flexbox-item-1 {
+    min-height: 100px;
+}
+
+.flexbox-item-2 {
+    min-height: 100px;
+}
+
+.flexbox-item-3 {
+    min-height: 100px;
+}
+
+
 
 
 
