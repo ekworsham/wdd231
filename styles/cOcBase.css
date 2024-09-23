@@ -3,6 +3,17 @@ body {
     
 }
 
+header {
+    font-size: 1.25rem;
+    background-color: #056CF2;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-weight: 500;
+    font-family: "Walter Turncoat", cursive;
+}
+
 nav {
     font-family: "Walter Turncoat", cursive;
     font-weight: 400;
@@ -41,31 +52,98 @@ nav {
     justify-content: center;
     font-size: 15px;
     text-align: center;
-    background-color: #BF2604;
+    background-color: #eee6e4;
 }
 
 .flexbox-item {
     width: 280px;
     margin: 10px;
-    border: 3px solid black;
-    background-color: yellow;
 }
 
 .flexbox-item-1 {
-    min-height: 100px;
+    min-height: 30px;
+}
+
+.flexbox-item-1 h1 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
 .flexbox-item-2 {
-    min-height: 100px;
+    min-height: 30px;
+}
+
+.flexbox-item-2 h1 {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
 .flexbox-item-3 {
-    min-height: 100px;
+    min-height: 30px;
 }
 
+.flexbox-item-1 h1 {
+    font-size: 25px;
+    background-color: #056CF2;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+.flexbox-item-2 h1 {
+    font-size: 25px;
+    background-color: #056CF2;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
 
+.flexbox-item-3 h1 {
+    font-size: 25px;
+    background-color: #056CF2;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
 
+.filterButtons {
+    background-color: white;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+}
 
+#allButton, #cseButton, #wddButton {
+    color: white;
+    min-width: 70px;
+    background-color: black;
+    font-weight: 600;
+    border-radius: 15px;
+}
+
+.courseItem {
+    background-color: gray;
+    color: #03258C;
+    font-size: 1.5rem;
+    font-weight: bolder;  
+}
+
+.courseList p {
+    font-weight: 13rem;
+}
+
+.completed {
+    background-color: #03258C;
+    color: white;
+}
 
 /* This is for the hamburger  icon */
 
@@ -116,7 +194,14 @@ ul.menuLinks.open {
 }
 
 footer {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    background-color: #056CF2;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-weight: 500;
+    font-family: "Walter Turncoat", cursive;
 }
 
 /* Color Theme Swatches in Hex */

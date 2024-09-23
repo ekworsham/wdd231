@@ -101,6 +101,9 @@ function renderCourses(filteredCourses) {
     filteredCourses.forEach(element => {
         const course = document.createElement('div');
         course.setAttribute('class', 'courseItem');
+        if (element.completed) {
+            course.classList.add('completed');
+        }
         course.innerHTML = `
         <p>${element.subject} ${element.number}</p>
         `;
