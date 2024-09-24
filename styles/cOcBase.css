@@ -20,10 +20,10 @@ nav {
     background-color: #056CF2;
 }
 
-.filterMenuLinks {
+/* .filterMenuLinks {
     min-height: 50px;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     font-size: 25px;
@@ -39,12 +39,12 @@ nav {
     min-width: 100px;
     background-color: yellow;
     
-}
+} */
 
-.filterMenuLinks a:hover {
-    background-color: #056CF2;
+/* .filterMenuLinks a:hover {
+    background-color: #f8069b;
     cursor: pointer;
-}
+} */
 
 .flexbox-container {
     display: flex;
@@ -64,18 +64,8 @@ nav {
     min-height: 30px;
 }
 
-.flexbox-item-1 h1 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-}
-
 .flexbox-item-2 {
     min-height: 30px;
-}
-
-.flexbox-item-2 h1 {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
 }
 
 .flexbox-item-3 {
@@ -91,8 +81,7 @@ nav {
 .flexbox-item-1 h1 {
     font-size: 25px;
     background-color: #056CF2;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     padding: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -101,8 +90,7 @@ nav {
 .flexbox-item-2 h1 {
     font-size: 25px;
     background-color: #056CF2;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     padding: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -142,9 +130,6 @@ nav {
     font-weight: bolder;  
 }
 
-.courseList p {
-    font-weight: 13rem;
-}
 
 .completed {
     background-color: #03258C;
