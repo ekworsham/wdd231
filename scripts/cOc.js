@@ -112,6 +112,15 @@ function renderCourses(filteredCourses) {
 }
 renderCourses(courses)
 
+function renderCredits(filteredCourses) {
+   const credits = document.querySelector('#credits');
+   const number = filteredCourses.reduce((sum, current) => {
+        return  sum+=current.credits;
+   }, 0)
+   credits.innerHTML = number;
+}
+renderCredits(courses);
+
 const allButton = document.querySelector("#allButton");
 allButton.addEventListener('click', ()=>{
     renderCourses(courses)

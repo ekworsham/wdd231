@@ -82,6 +82,12 @@ nav {
     min-height: 30px;
 }
 
+#total {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: auto;
+}
+
 .flexbox-item-1 h1 {
     font-size: 25px;
     background-color: #056CF2;
