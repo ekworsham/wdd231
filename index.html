@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whoville Chamber Of Commerce</title>
+    <title>Emory K Worsham, Whoville Chamber Of Commerce</title>
     <meta name="description" content="Chamber of Commerce | WDD 231 - Web Frontend Development I">
     <meta name="author" content="Keith Worsham">
     <script src="scripts/cOc.js" defer></script>
@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <h1>HEADER</h1>
+        <h1>Emory K. Worsham</h1>
         
         <nav>
             <!-- button id and menuLinks is for hamburger icon -->
@@ -35,29 +35,38 @@
     
 
     <main>
-        <div class="flexbox-container">
-            <div class="flexbox-item flexbox-item-1">
-                <h1>Course Work</h1>
-                <p>ITEM</p>
-            </div>
-
-            <div class="flexbox-item flexbox-item-2">
-                <h1>Whoville, Legume</h1>
-                <p>ITEM</p>
-            </div>
-
-            <div class="flexbox-item flexbox-item-3">  
-                <h1>Web and Computer Progamming Certificate</h1>
-                <div class="filterButtons">
-                    <button id="allButton">ALL</button>
-                    <button id="cseButton">CSE</button>
-                    <button id="wddButton">WDD</button>
+       
+        <div class="flexbox-item flexbox-item-1">
+            <section>
+                <div class="flexbox-container">
+                    <h1>Course Work</h1>
+                    <p>ITEM</p>
                 </div>
-                <div id="courseList">
-                </div> 
-                <p id="total">TOTAL CREDITS: <span id="credits"></span></p>
-            </div>
+            </section>
+
+            <section>
+                <div class="flexbox-item flexbox-item-2">
+                    <h1>Whoville, Legume</h1>
+                    <p>ITEM</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="flexbox-item flexbox-item-3">  
+                    <h1>Web and Computer Progamming Certificate</h1>
+                        <div class="filterButtons">
+                            <button id="allButton">ALL</button>
+                            <button id="cseButton">CSE</button>
+                            <button id="wddButton">WDD</button>
+                        </div>
+                </div>
+            </section>
+
+            <div id="courseList"></div> 
+            <p id="total">TOTAL CREDITS: <span id="credits"></span></p>
+            
         </div> 
+
     </main>
 
     <footer>
