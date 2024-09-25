@@ -124,6 +124,7 @@ nav {
 }
 
 .courseItem {
+    min-width: 270px;
     background-color: gray;
     color: #03258C;
     font-size: 1.5rem;

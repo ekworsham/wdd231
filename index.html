@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emory K Worsham, Whoville Chamber Of Commerce</title>
-    <meta name="description" content="Chamber of Commerce | WDD 231 - Web Frontend Development I">
+    <title>Emory K Worsham, Course Work</title>
+    <meta name="description" content="Course Work | WDD 231 - Web Frontend Development I">
     <meta name="author" content="Keith Worsham">
     <script src="scripts/cOc.js" defer></script>
     <link rel="stylesheet" href="styles/cOcBase.css">
@@ -32,26 +32,24 @@
         </nav>
     </header>
         
-    
-
     <main>
        
-        <div class="flexbox-item flexbox-item-1">
-            <section>
-                <div class="flexbox-container">
+        <div class="flexbox-container">
+            <section id="courseWork">
+                <div class="flexbox-item flexbox-item-1">
                     <h1>Course Work</h1>
                     <p>ITEM</p>
                 </div>
             </section>
 
-            <section>
+            <section id="location">
                 <div class="flexbox-item flexbox-item-2">
                     <h1>Whoville, Legume</h1>
                     <p>ITEM</p>
                 </div>
             </section>
 
-            <section>
+            <section id="cert">
                 <div class="flexbox-item flexbox-item-3">  
                     <h1>Web and Computer Progamming Certificate</h1>
                         <div class="filterButtons">
@@ -59,12 +57,11 @@
                             <button id="cseButton">CSE</button>
                             <button id="wddButton">WDD</button>
                         </div>
+                        
+                        <div id="courseList"></div> 
+                        <p id="total">TOTAL CREDITS: <span id="credits"></span></p>
                 </div>
-            </section>
-
-            <div id="courseList"></div> 
-            <p id="total">TOTAL CREDITS: <span id="credits"></span></p>
-            
+            </section>          
         </div> 
 
     </main>
