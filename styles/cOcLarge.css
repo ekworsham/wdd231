@@ -48,22 +48,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
 
-
     }
-    /* ul.menuLinks a:hover {
+    ul.menuLinks a:hover {
         background-color: #021859;
-    } */
-
-    /* .container {
-        display: flex;
-        flex-wrap: wrap;
-    }  */
-
-
-
-
-
-
-
+    }
 
 }
