@@ -108,36 +108,41 @@ function renderCourses(filteredCourses) {
         <p>${element.subject} ${element.number}</p>
         `;
         courseList.appendChild(course);
-    }); 
+    });
 }
 renderCourses(courses)
 
 function renderCredits(filteredCourses) {
-   const credits = document.querySelector('#credits');
-   const number = filteredCourses.reduce((sum, current) => {
-        return  sum+=current.credits;
-   }, 0)
-   credits.innerHTML = number;
+    const credits = document.querySelector('#credits');
+    const number = filteredCourses.reduce((sum, current) => {
+        return sum += current.credits;
+    }, 0)
+    credits.innerHTML = number;
 }
 renderCredits(courses);
 
 const allButton = document.querySelector("#allButton");
-allButton.addEventListener('click', ()=>{
+allButton.addEventListener('click', () => {
     renderCourses(courses)
 });
 
 const cseButton = document.querySelector("#cseButton");
-cseButton.addEventListener('click', ()=>{
+cseButton.addEventListener('click', () => {
     const cseCourses = courses.filter(course => {
-       return course.subject === 'CSE';
+        return course.subject === 'CSE';
     })
     renderCourses(cseCourses)
 });
 
 const wddButton = document.querySelector("#wddButton");
-wddButton.addEventListener('click', ()=>{
+wddButton.addEventListener('click', () => {
     const cseCourses = courses.filter(course => {
-       return course.subject === 'WDD';
+        return course.subject === 'WDD';
     })
     renderCourses(cseCourses)
+
+    
+
 });
+
+
