@@ -1,148 +1,21 @@
 body {
-    font-family: "Mountains of Christmas", serif;
-    
+    font-family: "Mountains of Christmas", serif;   
 }
 
 header {
-    font-size: 1.25rem;
+    font-size: .75rem;
     background-color: #056CF2;
     color: white;
     text-align: center;
     padding-top: 1px;
     padding-bottom: 1px;
-    font-weight: 500;
     font-family: "Walter Turncoat", cursive;
-}
-
-nav {
-    font-family: "Walter Turncoat", cursive;
-    font-weight: 400;
-    background-color: #056CF2;
-}
-
-/* .filterMenuLinks {
-    min-height: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    font-size: 25px;
-    background-color: #BF2604; 
-    list-style-type: none;
-    
-}
-
-.filterMenuLinks li {
-    margin: 10px;
-    color: rgb(230, 15, 15);
-    border: 3px solid black;
-    min-width: 100px;
-    background-color: yellow;
-    
-} */
-
-/* .filterMenuLinks a:hover {
-    background-color: #f8069b;
-    cursor: pointer;
-} */
-
-.flexbox-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 15px;
-    text-align: center;
-    background-color: #eee6e4;
-}
-
-.flexbox-item {
-    width: 280px;
-    margin: 10px;
-}
-
-.flexbox-item-1 {
-    min-height: 30px;
-}
-
-.flexbox-item-2 {
-    min-height: 30px;
-}
-
-.flexbox-item-3 {
-    min-height: 30px;
-}
-
-#total {
-    font-size: 25px;
-    font-weight: bolder;
-    margin: auto;
-}
-
-.flexbox-item-1 h1 {
-    font-size: 25px;
-    background-color: #056CF2;
-    margin: auto;
-    padding: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    color: white;
-}
-.flexbox-item-2 h1 {
-    font-size: 25px;
-    background-color: #056CF2;
-    margin: auto;
-    padding: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    color: white;
-}
-
-.flexbox-item-3 h1 {
-    font-size: 25px;
-    background-color: #056CF2;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 5px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    color: white;
-}
-
-.filterButtons {
-    background-color: white;
-    padding: .5rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-#allButton, #cseButton, #wddButton {
-    color: white;
-    min-width: 70px;
-    background-color: black;
-    font-weight: 600;
-    border-radius: 15px;
-}
-
-.courseItem {
-    min-width: 270px;
-    background-color: gray;
-    color: #03258C;
-    font-size: 1.5rem;
-    font-weight: bolder;  
-}
-
-
-.completed {
-    background-color: #03258C;
-    color: white;
 }
 
 /* This is for the hamburger  icon */
-
 #myButton::before {
     content: "\2630";
-    color: rgb(15, 14, 14);
-    
+    color: rgb(15, 14, 14);   
 }
 #myButton {
     font-size: 2rem;
@@ -157,7 +30,6 @@ nav {
     top: 0;
     right: 2vw;
 }
-
 ul.menuLinks li a {
     display: block;
     padding: .75rem 2vw;
@@ -166,27 +38,108 @@ ul.menuLinks li a {
     font-weight: 400;
     text-decoration: none;
 }
-
-/* li.currrent-menu-item a {
+li.currrent-menu-item a {
     background-color: black;
-} */
-
+} 
 ul.menuLinks {
     display: none;
     list-style-type: none; /* effects large */
 }
-
 #myButton.open::before {
     content: "x";
     color: rgb(7, 7, 7);
 }
-
 ul.menuLinks.open {
     display: block;
 }
 
+
+/* This is for nav */
+nav {
+    font-family: "Walter Turncoat", cursive;
+    font-weight: 300;
+    background-color: #056CF2;
+}
+.menulinks {
+    touch-action: auto;
+}
+
+
+/*div section area */
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    background-color: #eee6e4;
+}
+.flexbox-item {
+    width: 280px;
+    margin: 10px;
+}
+.flexbox-item-1 {
+    min-height: 30px;
+}
+.flexbox-item-1 h1 {
+    margin: auto;
+    font-size: 20px;
+    background-color: #056CF2;
+    padding: 5px;
+    color: white;
+}
+.flexbox-item-2 {
+    min-height: 30px;
+}
+.flexbox-item-2 h1 {
+    margin: auto;
+    font-size: 20px;
+    background-color: #056CF2;
+    padding: 5px;
+    color: white;
+}
+.flexbox-item-3 {
+    min-height: 30px;
+}
+.flexbox-item-3 h1 {
+    margin: auto;
+    font-size: 20px;
+    background-color: #056CF2;
+    padding: 5px;
+    color: white;
+}
+.filterButtons {
+    background-color: white;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-around;
+}
+#allButton, #cseButton, #wddButton {
+    color: white;
+    min-width: 60px;
+    background-color: black;
+    font-weight: 600;
+    border-radius: 15px;
+}
+.courseItem {
+    min-width: 270px;
+    background-color: gray;
+    color: #03258C;
+    font-size: 1.5rem;
+    font-weight: bolder;  
+}
+.completed {
+    background-color: #03258C;
+    color: white;
+}
+#total {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: auto;
+}
+
 footer {
-    font-size: 1.25rem;
+    font-size: .75rem;
     background-color: #056CF2;
     color: white;
     text-align: center;
@@ -195,6 +148,7 @@ footer {
     font-weight: 500;
     font-family: "Walter Turncoat", cursive;
 }
+
 
 /* Color Theme Swatches in Hex */
 .color-theme_WHO-1-hex { color: #03258C; }

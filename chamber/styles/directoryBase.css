@@ -1,0 +1,21 @@
+body {
+    font-family: "Mountains of Christmas", serif;
+    
+}
+
+header {
+    font-size: 1.25rem;
+    background-color: #056CF2;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-weight: 500;
+    font-family: "Walter Turncoat", cursive;
+}
+
+nav {
+    font-family: "Walter Turncoat", cursive;
+    font-weight: 400;
+    background-color: #056CF2;
+}

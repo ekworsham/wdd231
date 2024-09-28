@@ -1,56 +1,49 @@
 @media only screen and (min-width: 38rem) {
+    
+
+    /* This is for nav */
     #myButton {
         display: none;
     }
-
     ul.menuLinks, ul.menuLinks.open {
         display: flex;
         justify-content: space-around;
-    }
-
-    ul.filterMenuLinks, ul.filterMenuLinks.open {
-        display: flex;
-        justify-content: space-around;
-    }
-
-
-    .flexbox-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 1rem;
-        gap: 1rem
-        /* grid-template-rows: 1fr 1fr; */
-    }
-
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    #courseWork {
-        grid-column: 1/3;
-        
-    } 
-    .flexbox-item {
-        width: 100%;
-        margin: 0;
-    }
-
-    #location {
-        grid-column: 3/4;
-    }
-
-    #cert {
-        grid-column: 1/4;
-    }
-
-    #courseList {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-
     }
     ul.menuLinks a:hover {
         background-color: #021859;
     }
 
+    /*This is for the entire main section*/
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* This is for div sections */
+    .flexbox-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    #courseWork {
+        grid-column: 1/3; 
+    } 
+    .flexbox-item {
+        border: 1px solid black;
+        background-color: white;
+        width: 100%;
+        margin: 0;
+    }
+    #location {
+        grid-column: 3/4;
+    }
+    #cert {
+        grid-column: 1/4;
+    }
+    #courseList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
 }
