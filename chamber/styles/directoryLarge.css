@@ -40,9 +40,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
+        padding-left: 2rem;
     }
-
-
+    
     footer {
         font-size: 1rem;
         display: grid;
