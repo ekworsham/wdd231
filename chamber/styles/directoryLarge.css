@@ -4,8 +4,10 @@
         mix-blend-mode: multiply;
         max-width: 10rem;
         height: auto;
-        display: grid;
     }
+
+   
+    
     /* This is for nav */
     #myButton {
         display: none;
@@ -28,7 +30,7 @@
         font-size: 4rem;
         margin: 0 auto;
         margin-top: 1rem;
-       }
+    }
     #firstDiv {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -42,7 +44,7 @@
         gap: 1rem;
         padding-left: 2rem;
     }
-    
+
     footer {
         font-size: 1rem;
         display: grid;
