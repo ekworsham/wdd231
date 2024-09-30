@@ -1,0 +1,74 @@
+@media only screen and (min-width: 38rem) {
+    
+    .logo {
+        mix-blend-mode: multiply;
+        max-width: 10rem;
+        height: auto;
+        display: grid;
+    }
+    /* This is for nav */
+    #myButton {
+        display: none;
+    }
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: space-around;
+    }
+    ul.menuLinks a:hover {
+        background-color: #021859;
+    }
+
+    /*This is for the entire main section*/
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+       }
+    #firstDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        font-size: 2rem;
+    }
+
+    #card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+
+    footer {
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    footer p {
+        padding-left: 3rem;
+    }
+    footer .social{
+        text-align: center;
+        margin: auto;
+    }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
