@@ -1,13 +1,70 @@
-{
-    "companyName": "Whoville towing",
-    "details": [
-        {
-            "name": "",
-            "address": "",
-            "phoneNumber": "",
-            "url": "",
-            "icon": "",
-            "membershipLevel": "1=member, 2=silver, 3=gold"
-        }
-    ]
-}
+[
+    {
+        "name": "Augustus May Who",
+        "title": "Mayor",
+        "address": "22 Snowflake Lane",
+        "phoneNumber": "1-800-MAYOR",
+        "url": "mayor.who",
+        "image": "images/mayor_augustus.png",
+        "membershipLevel": "3"
+    },
+
+    {
+        "name": "The Grinch",
+        "title": ".....Scruge",
+        "address": "Mt. Crumpit",
+        "phoneNumber": "1-800-GRINCH",
+        "url": "grinch.max",
+        "image": "images/Natal.jpeg",
+        "membershipLevel": "1"
+    },
+
+    {
+        "name": "Lou Lou Who",
+        "title": "Postal Worker",
+        "address": "125 Snowflake Lane",
+        "phoneNumber": "1-800-POSTAL",
+        "url": "postOffice.who",
+        "image": "images/Natal.jpeg",
+        "membershipLevel": "2"
+    },
+
+    {
+        "name": "Dr. Seuss",
+        "title": "Doctor",
+        "address": "1966 Clover Flower Blvd",
+        "phoneNumber": "1-800-THEDOC",
+        "url": "DrSeuss.who",
+        "image": "images/DrSeuss.jpeg",
+        "membershipLevel": "3"
+    },
+
+    {
+        "name": "Dr. H. Hoovey",
+        "title": "Doctor",
+        "address": "2024 Eiffelber Tower",
+        "phoneNumber": "1-800-DOCTOR",
+        "url": "ProfessorOfScience.who",
+        "image": "images/DrH-Hoovey.jpeg",
+        "membershipLevel": "2"
+    },
+
+    {
+        "name": "Ned McDodd",
+        "title": "Mayor",
+        "address": "2 Horton Ave",
+        "phoneNumber": "1-800-DEVOTED",
+        "url": "exMayor.who",
+        "image": "images/NedMcDodd.jpeg",
+        "membershipLevel": "2"
+    },
+    {
+        "name": "Dr. Mary Lou Larue",
+        "title": "Doctor",
+        "address": "210 WHo University Dr.",
+        "phoneNumber": "1-800-MARYLOU",
+        "url": "scientist.edu",
+        "image": "images/MaryLouLarue.jpeg",
+        "membershipLevel": "1"
+    }
+]

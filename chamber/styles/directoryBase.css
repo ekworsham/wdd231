@@ -3,10 +3,11 @@ body {
 }
 
 .logo {
-    mix-blend-mode: multiply;
-    max-width: 90%;
+    mix-blend-mode: multiply; 
+    max-width: 50%;
     height: auto;
-    padding-top: 1.25rem;
+    padding-top: .5rem;
+    padding-left: .5rem;
 }
 
 header {
@@ -97,6 +98,12 @@ nav {
     margin: 0 auto;
     background-color: rgb(223, 211, 211);
     margin-bottom: 10px;
+}
+#cloud, #data {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    padding-left: 1rem;
+    margin: 0 auto;
 }
 
 /* Hero Image */
