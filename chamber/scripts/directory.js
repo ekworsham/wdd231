@@ -45,4 +45,16 @@ function createMemberCards(data) {
     });
 }
 
+const cardView = document.querySelector("#cardView");
+const listView = document.querySelector("#listView");
+
+cardView.addEventListener(`click`, () => {
+    getMemberData();
+})
+
+listView.addEventListener(`click`, () => {
+    
+})
+
+
 getMemberData();
