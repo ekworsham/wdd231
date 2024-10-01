@@ -6,8 +6,9 @@ body {
     mix-blend-mode: multiply; 
     max-width: 50%;
     height: auto;
-    padding-top: .5rem;
+    padding-top: .25rem;
     padding-left: .5rem;
+    padding-bottom: .25rem;
 }
 
 header {
@@ -30,6 +31,10 @@ header h1 {
 
 header h2 {
     font-size: .75rem;
+}
+
+#title h1, #title h2  {
+    margin: 0 auto;;
 }
 
 /* This is for the hamburger  icon */
@@ -55,7 +60,7 @@ ul.menuLinks li a {
     display: block;
     padding: .75rem 2vw;
     color: rgb(253, 253, 253);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
 }
@@ -84,6 +89,19 @@ nav {
     touch-action: auto;
 }
 
+main h2 {
+    margin: 0 auto;
+}
+
+#cardView, #listView {
+    margin-left: 1rem;
+}
+
+.contactList {
+    border: solid #056CF2;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 /* This is my events and weather section */
 .event, .weather, .forcast {
     text-align: center;

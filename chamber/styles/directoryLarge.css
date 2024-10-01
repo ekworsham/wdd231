@@ -7,19 +7,55 @@
         padding-top: .5rem;
         padding-left: .5rem;
     }
-
-   
     
+    #title h1 {
+        font-size: 4rem;
+        
+    }
+    #title h2 {
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    main h2 {
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+
+    #list {
+        text-align: center;
+    }
     /* This is for nav */
     #myButton {
         display: none;
     }
     ul.menuLinks, ul.menuLinks.open {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 200px 200px 335px 200px;
+        text-align: center;
+        
     }
     ul.menuLinks a:hover {
         background-color: #021859;
+    }
+
+    ul.menuLinks li a {
+        font-size: 2rem;
+    }
+
+    #cardView, #listView {
+        font-size: 1.5rem;
+    }
+
+    #buttonContainer {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 11vh; 
+    }
+
+    .contactList {
+        font-size: 2rem;
     }
 
     /*This is for the entire main section*/
@@ -28,11 +64,6 @@
         margin: 0 auto;
     }
 
-    h1 {
-        font-size: 4rem;
-        margin: 0 auto;
-        margin-top: 1rem;
-    }
     #firstDiv {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -47,6 +78,7 @@
         padding-left: 2rem;
     }
 
+     /*This is for the footer section*/
     footer {
         font-size: 1rem;
         display: grid;
@@ -56,23 +88,8 @@
     footer p {
         padding-left: 3rem;
     }
-    footer .social{
+    footer.social{
         text-align: center;
         margin: auto;
     }
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

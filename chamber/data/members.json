@@ -6,7 +6,7 @@
         "phoneNumber": "1-800-MAYOR",
         "url": "mayor.who",
         "email": "agustus@whoville.who",
-        "image": "images/mayor_augustus.png",
+        "image": "images/mayor_agustus.webp",
         "membershipLevel": "3"
     },
 
@@ -26,7 +26,7 @@
         "address": "125 Snowflake Lane",
         "phoneNumber": "1-800-POSTAL",
         "url": "postOffice.who",
-        "image": "images/natal.jpg",
+        "image": "images/natal.webp",
         "membershipLevel": "2"
     },
 
@@ -36,7 +36,7 @@
         "address": "1966 Clover Flower Blvd",
         "phoneNumber": "1-800-THEDOC",
         "url": "DrSeuss.who",
-        "image": "images/DrSeuss.jpg",
+        "image": "images/DrSeuss.webp",
         "membershipLevel": "3"
     },
 
@@ -46,7 +46,7 @@
         "address": "2024 Eiffelber Tower",
         "phoneNumber": "1-800-DOCTOR",
         "url": "ProfessorOfScience.who",
-        "image": "images/DrH-Hoovey.jpg",
+        "image": "images/DrH-Hoovey.webp",
         "membershipLevel": "2"
     },
 
@@ -56,7 +56,7 @@
         "address": "2 Horton Ave",
         "phoneNumber": "1-800-DEVOTED",
         "url": "exMayor.who",
-        "image": "images/NedMcDodd.jpg",
+        "image": "images/NedMcDodd.webp",
         "membershipLevel": "2"
     },
     {
@@ -65,7 +65,7 @@
         "address": "210 WHo University Dr.",
         "phoneNumber": "1-800-MARYLOU",
         "url": "scientist.edu",
-        "image": "images/MaryLouLarue.jpg",
+        "image": "images/MaryLouLarue.webp",
         "membershipLevel": "1"
     }
 ]
