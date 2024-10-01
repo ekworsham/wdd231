@@ -16,6 +16,7 @@ hamburgerElement.addEventListener('click', () => {
 const url="https://ekworsham.github.io/wdd231/chamber/data/members.json";
 
 const cards=document.querySelector("#card");
+const lists=document.querySelector("#list");
 
 async function getMemberData() {
     const response = await fetch(url);
@@ -26,6 +27,7 @@ async function getMemberData() {
 
 async function createMemberCards() {
     cards.innerHTML = " ";
+    lists.innerHTML = " ";
     const data = await getMemberData();
     data.forEach(member => {
         const card = document.createElement("div");
@@ -48,6 +50,7 @@ async function createMemberCards() {
 
 async function createMemberList () {
     cards.innerHTML = " ";
+    lists.innerHTML = " ";
     const data = await getMemberData();
     data.forEach(member => {
         const list = document.createElement("div");
@@ -61,7 +64,7 @@ async function createMemberList () {
                 </div>
             </div>
         `;
-        card.appendChild(list);
+        lists.appendChild(list);
     })
 }
 
