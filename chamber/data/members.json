@@ -46,7 +46,7 @@
         "address": "2024 Eiffelber Tower",
         "phoneNumber": "1-800-DOCTOR",
         "url": "ProfessorOfScience.who",
-        "image": "images/DrH-Hoovey.jpeg",
+        "image": "images/DrH-Hoovey.jpg",
         "membershipLevel": "2"
     },
 
@@ -56,7 +56,7 @@
         "address": "2 Horton Ave",
         "phoneNumber": "1-800-DEVOTED",
         "url": "exMayor.who",
-        "image": "images/NedMcDodd.jpeg",
+        "image": "images/NedMcDodd.jpg",
         "membershipLevel": "2"
     },
     {
@@ -65,7 +65,7 @@
         "address": "210 WHo University Dr.",
         "phoneNumber": "1-800-MARYLOU",
         "url": "scientist.edu",
-        "image": "images/MaryLouLarue.jpeg",
+        "image": "images/MaryLouLarue.jpg",
         "membershipLevel": "1"
     }
 ]

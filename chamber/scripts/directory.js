@@ -45,6 +45,23 @@ async function createMemberCards() {
     });
 }
 
+async function createMemberList () {
+    const data = await getMemberData();
+    data.forEach(member => {
+        const list = document.createElement("div");
+        list.setAttribute("class", "businessList");
+        list.innerHTML = `
+            <div class="listHeader1">
+                <div class="contactList">
+                    <h3>${member.name}<br>${member.title}</h3>
+                    <p>ADDRESS: ${member.address}</p>
+                    <p>PHONE: ${member.phoneNumber}</p>
+                </div>
+            </div>
+        `;
+    })
+}
+
 const cardView = document.querySelector("#cardView");
 const listView = document.querySelector("#listView");
 
@@ -53,8 +70,8 @@ cardView.addEventListener(`click`, () => {
 })
 
 listView.addEventListener(`click`, () => {
-    
+    createMemberList();
 })
 
-
 createMemberCards();
+createMemberList();
