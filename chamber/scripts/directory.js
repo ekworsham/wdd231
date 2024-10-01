@@ -25,6 +25,7 @@ async function getMemberData() {
 }
 
 async function createMemberCards() {
+    cards.innerHTML = " ";
     const data = await getMemberData();
     data.forEach(member => {
         const card = document.createElement("div");
@@ -46,6 +47,7 @@ async function createMemberCards() {
 }
 
 async function createMemberList () {
+    cards.innerHTML = " ";
     const data = await getMemberData();
     data.forEach(member => {
         const list = document.createElement("div");
@@ -59,6 +61,7 @@ async function createMemberList () {
                 </div>
             </div>
         `;
+        card.appendChild(list);
     })
 }
 
@@ -74,4 +77,3 @@ listView.addEventListener(`click`, () => {
 })
 
 createMemberCards();
-createMemberList();
