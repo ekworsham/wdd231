@@ -5,6 +5,7 @@
         "address": "22 Snowflake Lane",
         "phoneNumber": "1-800-MAYOR",
         "url": "mayor.who",
+        "email": "agustus@whoville.who",
         "image": "images/mayor_augustus.png",
         "membershipLevel": "3"
     },
@@ -15,7 +16,7 @@
         "address": "Mt. Crumpit",
         "phoneNumber": "1-800-GRINCH",
         "url": "grinch.max",
-        "image": "images/Natal.jpeg",
+        "image": "images/TheGrinch.webp",
         "membershipLevel": "1"
     },
 
@@ -25,7 +26,7 @@
         "address": "125 Snowflake Lane",
         "phoneNumber": "1-800-POSTAL",
         "url": "postOffice.who",
-        "image": "images/Natal.jpeg",
+        "image": "images/Natal.jpg",
         "membershipLevel": "2"
     },
 
@@ -35,7 +36,7 @@
         "address": "1966 Clover Flower Blvd",
         "phoneNumber": "1-800-THEDOC",
         "url": "DrSeuss.who",
-        "image": "images/DrSeuss.jpeg",
+        "image": "images/DrSeuss.jpg",
         "membershipLevel": "3"
     },
 
