@@ -19,6 +19,8 @@
         "phoneNumber": "1-800-GRINCH",
         "url": "grinch.max",
         "image": "images/TheGrinch.webp",
+            "width": 100,
+            "height": 100,
         "membershipLevel": "1"
     },
 
@@ -29,6 +31,8 @@
         "phoneNumber": "1-800-POSTAL",
         "url": "postOffice.who",
         "image": "images/natal.webp",
+            "width": 100,
+            "height": 100,
         "membershipLevel": "2"
     },
 
@@ -39,6 +43,8 @@
         "phoneNumber": "1-800-THEDOC",
         "url": "DrSeuss.who",
         "image": "images/DrSeuss.webp",
+            "width": 100,
+            "height": 100,
         "membershipLevel": "3"
     },
 
@@ -49,6 +55,8 @@
         "phoneNumber": "1-800-DOCTOR",
         "url": "ProfessorOfScience.who",
         "image": "images/DrH-Hoovey.webp",
+            "width": 100,
+            "height": 100,
         "membershipLevel": "2"
     },
 
@@ -59,6 +67,8 @@
         "phoneNumber": "1-800-DEVOTED",
         "url": "exMayor.who",
         "image": "images/NedMcDodd.webp",
+            "width": 100,
+            "height": 100,
         "membershipLevel": "2"
     },
     {
@@ -68,6 +78,8 @@
         "phoneNumber": "1-800-MARYLOU",
         "url": "scientist.edu",
         "image": "images/MaryLouLarue.webp",
+            "width": 100,
+            "height": 100,
         "membershipLevel": "1"
     }
 ]
