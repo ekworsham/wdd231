@@ -7,6 +7,8 @@
         "url": "mayor.who",
         "email": "agustus@whoville.who",
         "image": "images/mayor_augustus.webp",
+            "width": 100,
+            "height": 100,
         "membershipLevel": "3"
     },
 

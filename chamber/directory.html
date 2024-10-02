@@ -11,16 +11,16 @@
         <meta property="og:type" content="Website">
         <meta property="og:image" content="https://www.cantonga.gov/home/showpublishedimage/594/637451136859500000">
         <meta property="og:image:alt" content="City of Canton"> 
-        <meta property="og:url" content="https://ekworsham.github.io/wdd231/chamber/">
+        <!-- <meta property="og:url" content="https://ekworsham.github.io/wdd231/chamber/"> -->
         <meta property="og:url" content="https://www.facebook.com/keith.worsham.585/">
-        <meta property="og:image:alt" content="Keth Worsham - Facebook"> 
+        <meta property="og:image:alt" content="Keith Worsham - Facebook"> 
      
         <script src="scripts/directory.js" defer></script>
-        <link rel="stylesheet" href="styles/directoryBase.css">
-        <link rel="stylesheet" href="styles/directoryLarge.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/directoryBase.css" media="all">
+        <link rel="stylesheet" href="styles/directoryLarge.css" media="(min-width: 768px)">
+        <link rel="preload" href="https://fonts.googleapis.com">
+        <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Walter+Turncoat&display=swap" rel="stylesheet">
         <link rel="icon" href="favicon.ico">
     </head>
 <body>
@@ -31,9 +31,9 @@
             <h2>Chamber of Commerce</h2>
         </div>
 
-        <nav>
+        <nav role="navigation">
             <!-- button id and menuLinks is for hamburger icon -->
-            <button id="myButton" aria-label="button"></button>
+            <button id="myButton" aria-label="Open navigation menu" aria-expanded="false"></button>
             <ul class="menuLinks">
                 <li><a href="index.html" >Home</a></li>
                 <li><a href="#">Discover</a></li>
@@ -55,25 +55,31 @@
     </main>
 
     <footer>
-        <p id="footerTitle">Whoville Chamber of Commerce<br>1966 Snowflake Lane<br>Whoville, Mt. Crumpit<br>whovill@GrinchStoleChristmas.who<br>1-800-who-ville</p>
+        <section id="footerTitle">
+            <p>Whoville Chamber of Commerce</p>
+            <p>1966 Snowflake Lane</p>
+            <p>Whoville, Mt. Crumpit</p>
+            <p>whovill@GrinchStoleChristmas.who</p>
+            <p>1-800-who-ville</p>
+        </section>
         
-        <div class="social">
-            <a href="https://www.facebook.com/profile.php?id=100057151702793" target="_blank">
+        <section class="social">
+            <a href="https://www.facebook.com/profile.php?id=100057151702793" target="_blank" rel="noopener noreferrer">
                 <img src="images/facebook.webp" alt="fb icon" width="100" height="100" loading="lazy">
             </a>
-            <a href="https://x.com/" target="_blank">
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
                 <img src="images/twitter.webp" alt="twitter icon" width="100" height="100" loading="lazy">
             </a>
-            <a href="https://www.linkedin.com/in/keith-worsham/" target="_blank">
+            <a href="https://www.linkedin.com/in/keith-worsham/" target="_blank" rel="noopener noreferrer">
                 <img src="images/LinkedIn.webp" alt="linkedIn icon" width="100" height="100" loading="lazy">
             </a>
-        </div>
+        </section>
 
-        <div>
+        <section>
             <p>WDD231 Class Project<br>Emory Keith Worsham</p>
             <p>&copy;<span id="currentYear"></span> Whoville Chamber of Commerce</p>
             <p id="lastModified"></p>
-        </div>
+        </section>
     </footer>
 </body>
 </html>
