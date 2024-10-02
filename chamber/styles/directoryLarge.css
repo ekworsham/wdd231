@@ -26,6 +26,10 @@
         text-align: center;
     }
     /* This is for nav */
+    .active {
+        background-color: #3655b3;
+        border-radius: 50%;
+    }
     #myButton {
         display: none;
     }
