@@ -1,6 +1,7 @@
-body {
+
+/* body {
     font-family: "Mountains of Christmas", serif;   
-}
+} */
 
 .logo {
     mix-blend-mode: multiply; 
@@ -21,7 +22,7 @@ header {
     display: grid;
     grid-template-columns: 65px 1fr;
     text-align: left;
-    font-family: "Walter Turncoat", cursive;
+    /* font-family: "Walter Turncoat", cursive; */
 }
 
 header h1 {
@@ -81,7 +82,7 @@ ul.menuLinks.open {
 
 /* This is for nav */
 nav {
-    font-family: "Walter Turncoat", cursive;
+    /* font-family: "Walter Turncoat", cursive; */
     font-weight: 300;
     background-color: #056CF2;
 }
@@ -181,7 +182,7 @@ footer {
     padding-top: 1px;
     padding-bottom: 1px;
     font-weight: 500;
-    font-family: "Walter Turncoat", cursive;
+    /* font-family: "Walter Turncoat", cursive; */
 }
 
 #footerTitle p {
