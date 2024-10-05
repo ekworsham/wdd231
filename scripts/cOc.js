@@ -110,7 +110,6 @@ function renderCourses(filteredCourses) {
         courseList.appendChild(course);
     });
 }
-renderCourses(courses)
 
 function renderCredits(filteredCourses) {
     const credits = document.querySelector('#credits');
@@ -119,12 +118,17 @@ function renderCredits(filteredCourses) {
     }, 0)
     credits.innerHTML = number;
 }
-renderCredits(courses);
+
+
 
 const allButton = document.querySelector("#allButton");
 allButton.addEventListener('click', () => {
     renderCourses(courses)
+    renderCredits(courses)
 });
+
+
+
 
 const cseButton = document.querySelector("#cseButton");
 cseButton.addEventListener('click', () => {
@@ -132,17 +136,22 @@ cseButton.addEventListener('click', () => {
         return course.subject === 'CSE';
     })
     renderCourses(cseCourses)
+    renderCredits(cseCourses)
 });
+
+
+
 
 const wddButton = document.querySelector("#wddButton");
 wddButton.addEventListener('click', () => {
-    const cseCourses = courses.filter(course => {
+    const wddCourses = courses.filter(course => {
         return course.subject === 'WDD';
     })
-    renderCourses(cseCourses)
-
-    
-
+    renderCourses(wddCourses)
+    renderCredits(wddCourses)
 });
 
 
+// Default render
+renderCourses(courses);
+renderCredits(courses);
