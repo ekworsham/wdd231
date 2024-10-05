@@ -1,0 +1,27 @@
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+.card {
+    text-align: center;
+    border: solid black;
+    margin: 0 auto;
+    background-color: blue;
+    color: aliceblue;
+}
+
+.card p {
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+footer{
+    margin-top: 1rem;
+    text-align: center;
+}
