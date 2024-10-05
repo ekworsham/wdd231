@@ -200,3 +200,18 @@ footer .social img {
     margin-left: auto;
     margin-right: auto;
 }
+/* Call to action button */
+.ctaButton {
+    background-color: #ff6b6b; 
+    color: white; 
+    padding: 12px 24px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    display: inline-block; 
+}
+
+.ctaButton:hover {
+    background-color: #ff3b3b; /* Darken background on hover */
+}
