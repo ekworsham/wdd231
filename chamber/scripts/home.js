@@ -1,6 +1,6 @@
 const currentTemp = document.querySelector(`#current-temp`);
-const highTemp = document.querySelector(`#high-temp`);
-const lowTemp = document.querySelector(`#low-temp`);
+// const highTemp = document.querySelector(`#high-temp`);
+// const lowTemp = document.querySelector(`#low-temp`);
 const weatherIcon = document.querySelector(`#weather-icon`);
 const captionDesc = document.querySelector(`figcaption`);
 const myTown = document.querySelector(`#my-town`);
@@ -33,8 +33,8 @@ async function apiFetch() {
 // displaying the json data into the web page
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}°F`;
-    highTemp.innerHTML = `${data.main.temp}°F`;
-    lowTemp.innerHTML = `${data.main.temp}°F`;
+    // highTemp.innerHTML = `${data.main.temp}°F`;
+    // lowTemp.innerHTML = `${data.main.temp}°F`;
     myTown.innerHTML = data.name;
     const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute('src', iconSrc);
