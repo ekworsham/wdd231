@@ -64,6 +64,11 @@ nav {
     touch-action: auto;
 }
 
+.active {
+    background-color: #3655b3;
+    border-radius: 50%;
+}
+
 
 /*div section area */
 .flexbox-container {
