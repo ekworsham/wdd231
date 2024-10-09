@@ -3,7 +3,7 @@ let lastModified = document.querySelector("#lastModified");
 const today = new Date();
 currentYear.textContent = today.getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
-todayF = today.getDate();
+// todayF = today.getDate();
 
 const currentTemp = document.querySelector(`#current-temp`);
 const highTemp = document.querySelector(`#high-temp`);
@@ -13,8 +13,6 @@ const sunrise = document.querySelector(`#rise`);
 const sunset = document.querySelector(`#set`);
 const weatherIcon = document.querySelector(`#weather-icon`);
 const captionDesc = document.querySelector(`figcaption`);
-const myTown = document.querySelector(`#my-town`);
-
 
 // required variables for the url
 const mykey = "e8c1860a4d916ff69b865d14428dc98b"
@@ -36,7 +34,7 @@ async function fetchWeather() {
         if (response.ok) {
             const data = await response.json();
             console.log(data);
-            displayResults(data);
+            displayWeatherResults(data);
         } else {
             throw Error(await response.text());
         }
@@ -46,19 +44,18 @@ async function fetchWeather() {
 }
 
 // displaying the json data into the web page
-function displayResults(data) {
+function displayWeatherResults(data) {
     currentTemp.innerHTML = `${data.main.temp}°F`;
     highTemp.innerHTML = `${data.main.temp_max}°F`;
     lowTemp.innerHTML = `${data.main.temp_min}°F`;
     humidity.innerHTML = `${data.main.humidity}%`;
-
+    
     const sunriseTime = new Date(data.sys.sunrise*1000);
     sunrise.innerHTML = sunriseTime.toLocaleTimeString();
-
-    const sunsetTime = new DataTransfer(data.sys.sunset*1000);
+    
+    const sunsetTime = new Date(data.sys.sunset*1000);
     sunset.innerHTML = sunsetTime.toLocaleTimeString();
-
-    myTown.innerHTML = data.name;
+    
     const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute('src', iconSrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
@@ -70,13 +67,17 @@ fetchWeather();
 // ****************************************
 // getting the forecast
 // ****************************************
+const todayA = document.querySelector("#today-a");
+const todayB = document.querySelector("#today-b");
+const todayC = document.querySelector("#today-c");
+
 async function fetchForecast() {
     try {
         const response = await fetch(urlF);
         if (response.ok) {
             const dataF = await response.json();
             console.log(dataF);
-            displayResults(dataF);
+            displayForecastResults(dataF);
         } else {
             throw Error(await response.text());
         }
@@ -85,9 +86,22 @@ async function fetchForecast() {
     }   
 }
 
-// displaying the json data into the web page
-// function displayResults(dataF) {
+// // displaying the json data into the web page
+
+function displayForecastResults(dataF) {
+    const date2 = `${dataF.list[8].dt_txt}`;
+    const dateB = new Date(date2); 
+    const dayName2 = dateB.toLocaleDateString('en-US', { weekday: 'long' });
+
+    const date3 = `${dataF.list[16].dt_txt}`;
+    const dateC = new Date(date3); 
+    const dayName3 = dateC.toLocaleDateString('en-US', { weekday: 'long' });
     
+ 
+
+    todayA.innerHTML = `Today: ${dataF.list[0].main.temp}°F`;
+    todayB.innerHTML = `${dayName2}: ${dataF.list[1].main.temp}°F`;
+    todayC.innerHTML = `${dayName3}: ${dataF.list[2].main.temp}°F`;
     
-// }
+}
 fetchForecast();
