@@ -114,32 +114,38 @@ const memberUrl = "https://github.com/ekworsham/wdd231/blob/main/chamber/data/ho
 const cards=document.querySelector("#card");
 
 async function getMemberData() {
-    const response = await fetch(url);
-    const data = await response.json();
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
 
-    return data;
+        return data;
+    } catch (error) {
+        console.error("Error fetching member data:", error);
+    }
 }
 
 async function createMemberCards() {
     cards.innerHTML = " ";
     const data = await getMemberData();
-    data.forEach(member => {
-        const card = document.createElement("div");
-        card.setAttribute("class", "businessCard1");
-        card.innerHTML = `
-            <div class="cardHeader1">
-                <img src="${member.image}" alt="${member.name}" class="profileImg1">
-                <div class="contactInfo1">
-                    <h3>${member.name}<br>${member.title}</h3>
-                    <p>ADDRESS: ${member.address}</p>
-                    <p>PHONE: ${member.phoneNumber}</p>
-                    <p>URL: ${member.url}</p>
-                    <p>MEMBER LEVEL: ${member.membershipLevel}</p>
-                </div>
-            </div>
-        `;
-        cards.appendChild(card);
-    });
-}
 
+    if (data) {
+        data.forEach(home => {
+        const card = document.createElement("div");
+            card.setAttribute("class", "businessCard1");
+            card.innerHTML = `
+                <div class="cardHeader1">
+                    <img src="${home.image}" alt="${home.name}" class="profileImg1">
+                    <div class="contactInfo1">
+                        <h3>${member.name}<br>${member.title}</h3>
+                        <p>ADDRESS: ${member.address}</p>
+                        <p>PHONE: ${member.phoneNumber}</p>
+                        <p>URL: ${member.url}</p>
+                        <p>MEMBER LEVEL: ${member.membershipLevel}</p>
+                    </div>
+                </div>
+            `;
+            cards.appendChild(card);
+         });
+    }
+}
 createMemberCards();
