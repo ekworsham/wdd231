@@ -115,7 +115,7 @@ const cards=document.querySelector("#card");
 
 async function getMemberData() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(memberUrl);
         const data = await response.json();
 
         return data;
@@ -127,6 +127,7 @@ async function getMemberData() {
 async function createMemberCards() {
     cards.innerHTML = " ";
     const data = await getMemberData();
+    console.log(data)
 
     if (data) {
         data.forEach(home => {
