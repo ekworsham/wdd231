@@ -153,6 +153,35 @@ footer {
     font-weight: 500;
     font-family: "Walter Turncoat", cursive;
 }
+/* 
+***************************
+This is for the modal
+*************************** */
+#course-details {
+    border: 1px solid blue;
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: pink;
+    box-shadow: 0 0 3rem black;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: red;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid green;
+}
+
+
+
+
 
 
 /* Color Theme Swatches in Hex */

@@ -155,3 +155,60 @@ wddButton.addEventListener('click', () => {
 // Default render
 renderCourses(courses);
 renderCredits(courses);
+
+
+
+// *************************
+// This is the modal display
+// *************************
+const modal = document.querySelector("#course-details");
+const openModal = document.querySelector(".open-button");
+const closeModal = document.querySelector(".close-button");
+openModal.addEventListener("click", () => {
+  modal.showModal();
+});
+
+closeModal.addEventListener("click", () => {
+  modal.close();
+});
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</>strong>: ${course.credits}</p>
+    <p><strong>Certificate</>strong>: ${course.certificate}</p>
+    <p>${course.credits}</p>
+    <p><strong>Technologies</>strong>: ${course.technology.join}</p>
+
+    `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+
+
+        
+    })
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
