@@ -1,10 +1,15 @@
+// *******************************************
+// Set the current year and last modified date
+// *******************************************
 let currentYear = document.querySelector("#currentYear");
 let lastModified = document.querySelector("#lastModified");
 const today = new Date();
 currentYear.textContent = today.getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
+// *************************
 // Code for Hamburger Button
+// *************************
 const hamburgerElement = document.querySelector('#myButton');
 const navElement = document.querySelector('.menuLinks');
 
@@ -13,7 +18,9 @@ hamburgerElement.addEventListener('click', () => {
     hamburgerElement.classList.toggle('open');
 });
 
-
+// ***********************
+// Array of course objects
+// ***********************
 const courses = [
     {
         subject: 'CSE',
@@ -94,10 +101,13 @@ const courses = [
     }
 ]
 
+// **************************
+// Function to render courses
+// **************************
 function renderCourses(filteredCourses) {
     const courseList = document.querySelector(`#courseList`);
     courseList.innerHTML = "";
-
+    
     filteredCourses.forEach(element => {
         const course = document.createElement('div');
         course.setAttribute('class', 'courseItem');
@@ -107,10 +117,16 @@ function renderCourses(filteredCourses) {
         course.innerHTML = `
         <p>${element.subject} ${element.number}</p>
         `;
+        course.addEventListener("click", () => {
+            displayCourseDetails(element);
+        });
         courseList.appendChild(course);
     });
 }
 
+// **********************************************
+// Function to calculate and render total credits
+// **********************************************
 function renderCredits(filteredCourses) {
     const credits = document.querySelector('#credits');
     const number = filteredCourses.reduce((sum, current) => {
@@ -120,15 +136,14 @@ function renderCredits(filteredCourses) {
 }
 
 
-
+// ******************************************************
+// Filtering and rendering courses based on button clicks
+// ******************************************************
 const allButton = document.querySelector("#allButton");
 allButton.addEventListener('click', () => {
     renderCourses(courses)
     renderCredits(courses)
 });
-
-
-
 
 const cseButton = document.querySelector("#cseButton");
 cseButton.addEventListener('click', () => {
@@ -139,9 +154,6 @@ cseButton.addEventListener('click', () => {
     renderCredits(cseCourses)
 });
 
-
-
-
 const wddButton = document.querySelector("#wddButton");
 wddButton.addEventListener('click', () => {
     const wddCourses = courses.filter(course => {
@@ -151,26 +163,20 @@ wddButton.addEventListener('click', () => {
     renderCredits(wddCourses)
 });
 
-
-// Default render
+// ******************************
+// Default rendering on page load
+// ******************************
 renderCourses(courses);
 renderCredits(courses);
-
 
 
 // *************************
 // This is the modal display
 // *************************
-const modal = document.querySelector("#course-details");
+const courseDetails = document.querySelector("#course-details");
+
 const openModal = document.querySelector(".open-button");
 const closeModal = document.querySelector(".close-button");
-openModal.addEventListener("click", () => {
-  modal.showModal();
-});
-
-closeModal.addEventListener("click", () => {
-  modal.close();
-});
 
 function displayCourseDetails(course) {
     courseDetails.innerHTML = '';
@@ -178,37 +184,20 @@ function displayCourseDetails(course) {
     <button id="closeModal">❌</button>
     <h2>${course.subject} ${course.number}</h2>
     <h3>${course.title}</h3>
-    <p><strong>Credits</>strong>: ${course.credits}</p>
-    <p><strong>Certificate</>strong>: ${course.certificate}</p>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
     <p>${course.credits}</p>
-    <p><strong>Technologies</>strong>: ${course.technology.join}</p>
-
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
     `;
     courseDetails.showModal();
 
-    closeModal.addEventListener("click", () => {
-
-
-        
-    })
-
-
-
-
+    const closeModal = document.querySelector("#closeModal");
+    if (closeModal) {
+        closeModal.addEventListener("click", () => {
+            courseDetails.close();
+        });
+    } else {
+        console.error("Close button not found");
+    }
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
