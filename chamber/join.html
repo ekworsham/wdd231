@@ -15,6 +15,7 @@
         <meta property="og:url" content="https://www.facebook.com/keith.worsham.585/">
         <meta property="og:image:alt" content="Keth Worsham - Facebook"> 
         <script src="scripts/home.js" defer></script>
+        <script src="scripts/join.js" defer></script>
         <link rel="stylesheet" href="styles/directoryBase.css">
         <link rel="stylesheet" href="styles/directoryLarge.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +43,94 @@
         </nav>
     </header>
 
+    <main>
+        <h2>Membership Application Form</h2>
+        <div class="formContainer">
+            <form method="get" action="thankyou.html">
+                <label>
+                    <h4>First Name:</h4>
+                    <input type="text" required="Applicant's First Name" name="firstName" title="name" autocomplete="given-name">
+                </label>
+                <label>
+                    <h4>Last Name:</h4>
+                    <input type="text" required="Applicant's Last Name" name="lastName" title="name" autocomplete="given-name">
+                </label>
+                <label>
+                    <h4>Organizational Title:</h4>
+                    <input type="text" name="orgTitle" title="Applicant's Organizational Title" autocomplete="organization-title" pattern = "[A-Za-z-\s]{7,}">
+                </label>
+                <label>
+                    <h4>Email Address:</h4>
+                    <input type="email" required="Applicant's email address" name="email" title="email"  autocomplete="email" placeholder = "example@email.com">
+                </label>
+                <label>
+                    <h4>Cell Phone:</h4>
+                    <input type="telephone" required="Applicant's mobile Number" name="mobile" title="number"  autocomplete="mobile number">
+                </label>
+                <label>
+                    <h4>Organization's Name:</h4>
+                    <input type="text" required="Applicant's organization-name Number" name="orgName" title="orgName"  autocomplete="organization">
+                </label>
+                <label>
+                    <h3>Membership Level:</h3>
+                    <h4>Non-profit Membership Level</h4>
+                    <h4>Bronze Membership Level</h4>
+                    <h4>Silver Membership Level</h4>
+                    <h4>Gold Membership Level</h4>
+                    </select>
+                </label>
 
+                <label>
+                    <h4>Organization Description:</h4>
+                    <textarea name="OrgDescription" title="Organization"></textarea>
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Submit Application">
+            </form>
+        </div>
+
+
+            <!-- Modals
+        <div id="modal-np" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-np')">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <p>No fee. Ideal for non-profit organizations.</p>
+                <p>Includes access to community events and basic advertising.</p>
+            </div>
+        </div>
+        <div id="modal-bronze" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-bronze')">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p>Basic membership benefits including discounts on events.</p>
+                <p>Provides access to training and workshops.</p>
+            </div>
+        </div>
+        <div id="modal-silver" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-silver')">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <p>Access to premium events and featured advertising opportunities.</p>
+                <p>Discounts on services and products.</p>
+            </div>
+        </div>
+        <div id="modal-gold" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal-gold')">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <p>All-inclusive benefits including VIP access to events.</p>
+                <p>Priority advertising placements and free training sessions.</p>
+            </div>
+        </div> -->
+
+
+
+
+
+
+
+    </main>
 
 
 
