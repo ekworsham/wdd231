@@ -171,39 +171,94 @@ if (cards) {
 // **********************************
 // For Join HTML
 // **********************************
-const openButton1 = document.querySelector(".openButton1");
-if (openButton1) {
-    const openButton2 = document.querySelector(".openButton2");
-    const openButton3 = document.querySelector(".openButton3");
-    const openButton4 = document.querySelector(".openButton4");
-    const dialogBox1 = document.querySelector(".dialogBox1");
-    const dialogBox2 = document.querySelector(".dialogBox2");
-    const dialogBox3 = document.querySelector(".dialogBox3");
-    const dialogBox4 = document.querySelector(".dialogBox4");
-    const closeButton = document.querySelector(".closeButton");
 
-    function addDialog(openButton, dialogBox) {
-        openButton.addEventListener("click", () => {
-        dialogBox.showModal();
-    });
+const membershipLevels = [
+    {
+        "name": "Non-Profit",
+        "cost": "117",
+        "benefits": [
+            "a",
+            "b",
+            "c"
+        ]
+    },
+    {
+        "name": "Bronze",
+        "cost": "200",
+        "benefits": [
+            "d",
+            "e",
+            "f"
+        ]
+    },
+    {
+        "name": "Silver",
+        "cost": "250",
+        "benefits": [
+            "g",
+            "h",
+            "i"
+        ]
+    },
+    {
+        "name": "Gold",
+        "cost": "300",
+        "benefits": [
+            "j",
+            "k",
+            "l"
+        ]
+    }
+]
+
+const membershipLevelsElement = document.querySelector(".membership-levels")
+
+if (membershipLevelsElement) {
+
+// **************************
+// Creates membership card
+// **************************
+
+    function createMembershipCard(membership) {
+        const membershipCard = document.createElement("div")
+        membershipCard.innerHTML = `
+            <h4>${membership.name} Membership Level</h4>
+            <button class="open-button-${membership.name}">Learn More</button>
+        `
+        membershipLevelsElement.appendChild(membershipCard)
+
+        document
+            .querySelector(`.open-button-${membership.name}`)
+            .addEventListener("click", () => {
+                createMembershipModal(membership)
+            })
     }
 
-    addDialog(openButton1, dialogBox1);
-    addDialog(openButton2, dialogBox2);
-    addDialog(openButton3, dialogBox3);
-    addDialog(openButton4, dialogBox4);
+// *****************************
+// Create membership level modal
+// *****************************
+    function createMembershipModal(membership) {
+        let membershipDialogBox = document.querySelector(".dialog-box")
+        membershipDialogBox.innerHTML = `
+            <p>Cost: $${membership.cost}</p>
+            <h4>Benefits:</h4>
+        `   
+        membership.benefits.forEach(benefits => {
+            membershipDialogBox.innerHTML += `${benefits}<br>`
+        });          
+                
+        membershipDialogBox.innerHTML += `<button class="close-button-${membership.name}">Close</button>`
 
-    // function closeDialog(closeButton, dialogBox) {
-    //     closeButton.addEventListener("click", () => {
-    //     dialogBox.close();
-    // });
-    // }
-    // closeDialog(closeButton1, dialogBox1);
-    // closeDialog(closeButton2, dialogBox2);
-    // closeDialog(closeButton3, dialogBox3);
-    // closeDialog(closeButton4, dialogBox4);
+        membershipDialogBox.showModal()
 
-    closeButton.addEventListener("click", () => {
-        dialogBox.close();
+        document
+            .querySelector(`.close-button-${membership.name}`)
+            .addEventListener("click", () => {
+                membershipDialogBox.close()
+            })
+    }
+
+    membershipLevels.forEach(membership => {
+        createMembershipCard(membership)
     });
 }
