@@ -175,38 +175,40 @@ if (cards) {
 const membershipLevels = [
     {
         "name": "Non-Profit",
-        "cost": "117",
+        "cost": "20 monthly",
         "benefits": [
-            "a",
-            "b",
-            "c"
+            "Buisness listed in online directory",
+            "Promote business on social media and digital platforms",
+            "Your business displayed in monthly newsletter"
         ]
     },
     {
         "name": "Bronze",
-        "cost": "200",
+        "cost": "41 monthly",
         "benefits": [
-            "d",
-            "e",
-            "f"
+            "All of Non-Profit PLUS:",
+            "Priority placement on our online directory",
+            "Enhanced marketing support",
+            "Discount advertising in newsletter and on digital sign"
         ]
     },
     {
         "name": "Silver",
-        "cost": "250",
+        "cost": "100 monthly",
         "benefits": [
-            "g",
-            "h",
-            "i"
+            "All of Non-Profit and Bronze PLUS:",
+            "1 Free Advertisement in a monthly newsletter",
+            "1 Diamond Sponsorship of an Annual Chamber Event"
         ]
     },
     {
         "name": "Gold",
-        "cost": "300",
+        "cost": "400 monthly",
         "benefits": [
-            "j",
-            "k",
-            "l"
+            "All of Non-Profit, Bronze and Silver PLUS:",
+            "Free Advertisement in a all newsletter ",
+            "Priority placement in newsletters",
+            "Business included in promotional video marketing"
         ]
     }
 ]
