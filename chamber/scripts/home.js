@@ -224,6 +224,7 @@ if (membershipLevelsElement) {
     function createMembershipCard(membership) {
         const membershipCard = document.createElement("div")
         membershipCard.innerHTML = `
+        
             <h4>${membership.name} Membership Level</h4>
             <button class="open-button-${membership.name}">Learn More</button>
         `

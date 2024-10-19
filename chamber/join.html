@@ -43,16 +43,17 @@
     </header>
 
     <main>
-        <h2 id="membership-form">Membership Application Form</h2>
+        
         <div class="formContainer">
             <form method="get" action="thankyou.html">
                 <label>
+                    <b><span style="font-size: 1.5rem;">Membership Application Form</span> </b><br>
                     First Name:
-                    <input type="text" required="Applicant's First Name" name="firstName" title="name" autocomplete="given-name">
+                    <input type="text" name="firstName" title="name" autocomplete="given-name" required>
                 </label>
                 <label>
                     Last Name:
-                    <input type="text" required="Applicant's Last Name" name="lastName" title="name" autocomplete="given-name">
+                    <input type="text" name="lastName" title="name" autocomplete="given-name" required>
                 </label>
                 <label>
                     Organizational Title:
@@ -60,15 +61,15 @@
                 </label>
                 <label>
                     Email Address:
-                    <input type="email" required="Applicant's email address" name="email" title="email"  autocomplete="email" placeholder = "example@email.com">
+                    <input type="email" name="email" title="email"  autocomplete="email" placeholder = "example@email.com">
                 </label>
                 <label>
                     Cell Phone:
-                    <input type="telephone" required="Applicant's mobile Number" name="mobile" title="number"  autocomplete="mobile number">
+                    <input type="number" name="mobile" title="number"  autocomplete="on" required>
                 </label>
                 <label>
                     Organization's Name:
-                    <input type="text" required="Applicant's organization-name Number" name="orgName" title="orgName"  autocomplete="organization">
+                    <input type="text" name="orgName" title="orgName"  autocomplete="organization" required>
                 </label>
                 <label>
                     Organization Description:
@@ -78,8 +79,10 @@
                 <input type="submit" value="Submit Application">
             </form>
 
-            <h3 id="membership-level">Membership Level</h3>
-            <div class="membership-levels"></div>
+            
+            <div class="membership-levels">
+               <h3 id="membership-level">Membership Level</h3> 
+            </div>
             <dialog class="dialog-box"></dialog>
         </div>
     </main>

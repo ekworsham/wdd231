@@ -96,4 +96,37 @@
         text-align: center;
         margin: auto;
     }
+
+    /* *****************************
+     JOIN html 
+    ***************************** */
+    form, #membership-Form {
+       max-width: 330px;
+       margin-left: 2rem;
+       
+    }
+    
+    #membership-form {
+      text-align: left; 
+      margin-bottom: 1rem; 
+    }
+    
+    .formContainer {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+    
+    #membership-level {
+        margin: 0 auto;
+        padding-bottom: 0;
+        padding-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .menuLinks {
+        margin-left: 25rem;
+        flex-wrap: wrap;
+    }
+
 }
+

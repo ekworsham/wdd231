@@ -210,7 +210,6 @@ footer .social img {
     margin-right: auto;
 }
 
-
 /*
 *****************************
  Call to action button 
@@ -247,28 +246,36 @@ footer .social img {
     margin-top: 1rem;
 }
 
-.formContainer h4 {
-    margin: 0 auto;
-    padding-top: .75rem;
-    text-align: left;
-}
-
 .formContainer input, .formContainer textarea {
-    background-color: #056CF2;
+    background-color: #7cb5ff;
     max-width: 320px;
     width: 100%;
-    color:white;
+    color:black;
     box-shadow: 0 4px 10px black;
 }
 
 .formContainer ::placeholder{
-    color: white;
+    color: black;
 }
 
+.formContainer input {
+    margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .membership-levels div {
     margin-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
     background-color: tan;
     border-bottom-right-radius: 1rem;
+    animation: fadeIn 7s;
 }
+
