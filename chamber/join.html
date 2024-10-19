@@ -65,7 +65,7 @@
                 </label>
                 <label>
                     Cell Phone:
-                    <input type="number" name="mobile" title="number"  autocomplete="on" placeholder="(123) 456-7890">
+                    <input type="tel" name="mobile" title="number"  autocomplete="tel" placeholder="(123) 456-7890">
                 </label>
                 <label>
                     Organization's Name:
@@ -75,8 +75,10 @@
                     Organization Description:
                     <textarea name="OrgDescription" title="Organization"></textarea>
                 </label>
-                <input type="hidden" name="timestamp" id="timestamp">
-                <input type="submit" value="Submit Application">
+                <label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Submit Application">
+                </label>
             </form>
 
             
