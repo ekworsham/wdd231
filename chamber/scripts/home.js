@@ -4,6 +4,14 @@ const today = new Date();
 currentYear.textContent = today.getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
+const hamburgerElement = document.querySelector('#myButton');
+const navElement = document.querySelector('.menuLinks');
+
+hamburgerElement.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerElement.classList.toggle('open');
+})
+
 const currentTemp = document.querySelector(`#current-temp`);
 if (currentTemp) {
     const highTemp = document.querySelector(`#high-temp`);
