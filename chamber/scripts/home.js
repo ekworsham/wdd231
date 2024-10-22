@@ -4,6 +4,9 @@ const today = new Date();
 currentYear.textContent = today.getFullYear();
 lastModified.textContent = `Last Modification: ${document.lastModified}`;
 
+// ******************
+// Hamburger Button
+// ******************
 const hamburgerElement = document.querySelector('#myButton');
 const navElement = document.querySelector('.menuLinks');
 
@@ -273,3 +276,36 @@ if (membershipLevelsElement) {
         createMembershipCard(membership)
     });
 }
+
+// // *************
+// // Discover Page
+// // *************
+// // Retrieve the last visit date from localStorage
+// const lastVisit = localStorage.getItem('lastVisit');
+
+// // Get the visit message element
+// const visitMessage = document.getElementById('visit-message');
+
+// if (lastVisit) {
+//     // Calculate the difference in milliseconds between visits
+//     const lastVisitDate = new Date(lastVisit);
+//     const timeDifference = currentDate - lastVisitDate;
+
+//     // Convert the difference to days
+//     const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+//     // Display the appropriate message
+//     if (daysDifference < 1) {
+//         visitMessage.textContent = "Back so soon! Awesome!";
+//     } else if (daysDifference === 1) {
+//         visitMessage.textContent = "You last visited 1 day ago.";
+//     } else {
+//         visitMessage.textContent = `You last visited ${daysDifference} days ago.`;
+//     }
+// } else {
+//     // If this is the first visit
+//     visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+// }
+
+// // Store the current visit date in localStorage
+// localStorage.setItem('lastVisit', currentDate.toISOString());
