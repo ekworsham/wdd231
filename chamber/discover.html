@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Join</title>
-        <meta name="description" content="Join | WDD 231 - Web Frontend Development I">
+        <title>Home</title>
+        <meta name="description" content="Home | WDD 231 - Web Frontend Development I">
         <meta name="author" content="Keith Worsham">
-        <meta property="og:title" content="Whoville Chamber of Commerce Join Page">
-        <meta property="og:description" content="Whoville Chamber of Commerce Join page">
+        <meta property="og:title" content="Whoville Chamber of Commerce Home Page">
+        <meta property="og:description" content="Whoville Chamber of Commerce home page">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://www.vmcdn.ca/f/files/glaciermedia/import/lmp-all/1271817-whoville-grinch-stole-christmas.jpg;w=851">
         <meta property="og:image:alt" content="City of Whoville"> 
@@ -34,63 +34,69 @@
             <!-- button id and menuLinks is for hamburger icon -->
             <button id="myButton" aria-label="button"></button>
             <ul class="menuLinks">
-                <li><a href=index.html>Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="" class="active">Join</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>  
         </nav>
     </header>
-
     <main>
-        
-        <div class="formContainer">
-            <form method="get" action="thankyou.html">
-                <label>
-                    <b>Membership Application Form</b><br>
-                    First Name:
-                    <input type="text" name="firstName" title="name" autocomplete="given-name" required>
-                </label>
-                <label>
-                    Last Name:
-                    <input type="text" name="lastName" title="name" autocomplete="given-name" required>
-                </label>
-                <label>
-                    Organizational Title:
-                    <input type="text" name="orgTitle" title="Applicant's Organizational Title" autocomplete="organization-title" pattern = "[A-Za-z-\s]{7,}">
-                </label>
-                <label>
-                    Email Address:
-                    <input type="email" name="email" title="email"  autocomplete="email" placeholder = "example@email.com">
-                </label>
-                <label>
-                    Cell Phone:
-                    <input type="tel" name="mobile" title="number"  autocomplete="tel" placeholder="(123) 456-7890">
-                </label>
-                <label>
-                    Organization's Name:
-                    <input type="text" name="orgName" title="orgName"  autocomplete="organization" required>
-                </label>
-                <label>
-                    Organization Description:
-                    <textarea name="OrgDescription" title="Organization"></textarea>
-                </label>
-                <label>
-                    <input type="hidden" name="timestamp" id="timestamp">
-                    <input type="submit" value="Submit Application">
-                </label>
-            </form>
+        <h2>Discover Page</h2>
+       
+        <Div class="demo">
+            <h3>Demographics</h3>
+            <p>
+                <span class="label">Population:</span> 257 people
+            </p>
+            <p>
+                <span>Median Age:</span> 32.5 years
+            </p>    
+            <p>
+                <span>Median Income:</span> $35,414
+            </p>
+        </Div>
 
-            
-            <div class="membership-levels">
-               <h3 id="membership-level">Membership Level</h3> 
-            </div>
-            <dialog class="dialog-box"></dialog>
+        <Div class="stats">
+            <h3>Statistics</h3>
+            <p>
+                <span class="label">Race/Ethenicity:</span> 100% Whos
+            </p>
+            <p>
+                <span>Characteristices:</span> mix of human,<br>leporid and kangaroo-like
+            </p>    
+            <p>
+                <span>Commute time:</span> 5 minutes
+            </p>
+        </Div>
+
+        <Div class="attractions">
+            <h3>Attractions</h3>
+            <p>
+                <span class="label">Sleigh Rides</span>
+            </p>
+            <p>
+                <span>Ice Skating</span>
+            </p>    
+            <p>
+                <span>Decorating Trees</span> 
+            </p>
+
+        </Div>
+
+        <div class="img">
+            <img src="images/dog (1).webp" alt="Dog"  loading="lazy">
+            <img src="images/taxi(1).webp" alt="Vehicle"  loading="lazy">
+            <img src="images/town (1).webp" alt="Town"  loading="lazy">
+            <img src="images/sleighRide (1).webp" alt="Sleigh Ride"  loading="lazy">
+            <img src="images/toys (1).webp" alt="Dog"  loading="lazy">
+            <img src="images/tree (1).webp" alt="Tree"  loading="lazy">
         </div>
+
     </main>
 
-    <footer>
-        <p id="footerTitle">Whoville Chamber of Commerce<br>1966 Snowflake Lane<br>Whoville, Mt. Crumpit<br>whoville@GrinchStoleChristmas.who<br>1-800-who-ville</p>
+<footer>
+        <p id="footerTitle">Whoville Chamber of Commerce<br>1966 Snowflake Lane<br>Whoville, Mt. Crumpit<br>Whoville@GrinchStoleChristmas.who<br>1-800-who-ville</p>
         
         <div class="social">
             <a href="https://www.facebook.com/profile.php?id=100057151702793" target="_blank">
@@ -109,6 +115,7 @@
             <p>&copy;<span id="currentYear"></span> Whoville Chamber of Commerce</p>
             <p id="lastModified"></p>
         </div>
-    </footer>    
+    </footer>
+
 </body>
 </html>
