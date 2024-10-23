@@ -1,8 +1,8 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 601px) {
     
     .logo {
         mix-blend-mode: multiply; 
-        max-width: 100%;
+        width: 100%;
         height: auto;
         padding-top: .5rem;
         padding-left: .5rem;
@@ -17,6 +17,8 @@
         margin-left: 1.5rem;
     }
 
+  
+
     main h2 {
         font-size: 2rem;
         margin-left: 2rem;
@@ -25,7 +27,23 @@
     #list {
         text-align: center;
     }
-    /* This is for nav */
+
+    header {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        grid-template-rows: 7rem 1fr;
+    }    
+
+    nav {
+        grid-column: span 2;
+        text-align: center;
+        display: flex;
+        margin-left: 10em;
+    }
+
+    /* **********************
+    This is for nav 
+    ********************* */
     .active {
         background-color: #3655b3;
         border-radius: 50%;
@@ -34,10 +52,8 @@
         display: none;
     }
     ul.menuLinks, ul.menuLinks.open {
-        display: grid;
-        grid-template-columns: 200px 200px 335px 200px;
-        text-align: center;
-        
+        display: contents;
+        /* 200px 200px 335px 200px */
     }
     ul.menuLinks a:hover {
         background-color: #021859;
@@ -62,7 +78,9 @@
         font-size: 2rem;
     }
 
-    /*This is for the entire main section*/
+    /* **********************************
+    This is for the entire main section
+    ************************************ */
     main {
         max-width: 1200px;
         margin: 0 auto;
@@ -82,7 +100,9 @@
         padding-left: 2rem;
     }
 
-     /*This is for the footer section*/
+     /* ******************************
+     This is for the footer section
+     ****************************** */
     footer {
         font-size: 1rem;
         display: grid;
@@ -128,5 +148,30 @@
         flex-wrap: wrap;
     }
 
+
+/* 
+    *********************
+    Discover Page
+    ********************* */
+    figure {
+        margin: 0 auto;
+    }
+    
+    .images {
+        min-width: 320px;
+    }
+    .label {
+        font-weight: 600;
+    }
+
+
+
+
+    .container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 20rem 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr; */
+    }
 }
 
