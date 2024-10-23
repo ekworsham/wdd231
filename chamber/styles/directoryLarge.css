@@ -209,13 +209,14 @@
         border-radius: 25px;
     }
 
+    .hover:hover {
+        box-shadow: 0 0 50px blue;
+    }
+
     figcaption {
         text-align: center;
         margin-bottom: 2rem;
     }
-    
-
-
-    
+     
 }
 
