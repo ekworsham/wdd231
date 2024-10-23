@@ -241,10 +241,14 @@ footer .social img {
     font-size: 16px; 
     border-radius: 5px; 
     display: inline-block; 
+    position: absolute;
+    top: 42%;
+    left: 80%;
+    transform: translate(-50%, -50%);
 }
 
 .ctaButton:hover {
-    background-color: #ff3b3b; /* Darken background on hover */
+    background-color: #ff3b3b; 
 }
 
 
@@ -300,7 +304,7 @@ footer .social img {
 /* *************
 Discover Page
 ************* */
-#disc {
+#discover h2 {
     text-align: center;
     margin-top: .75rem;
     margin-bottom: .75rem;
