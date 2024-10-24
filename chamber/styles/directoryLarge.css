@@ -1,5 +1,18 @@
 @media only screen and (min-width: 601px) {
-    
+    /* Basic styling for the sidebar */
+#sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    position: fixed;
+    top: 55px;
+    right: 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 2px;
+}
+
     .logo {
         mix-blend-mode: multiply; 
         width: 100%;

@@ -305,7 +305,7 @@ if (lastVisit) {
     }
 } else {
     // If this is the first visit
-    visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+    visitMessage.textContent = "Welcome! Feel free to ask any questions";
 }
 
 // Store the current visit date in localStorage
