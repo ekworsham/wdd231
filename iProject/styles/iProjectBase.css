@@ -1,3 +1,10 @@
+@media only screen and (max-width: 600px) {
+    .heroImage {
+        max-width: 100%;
+        max-height: 200px;
+    }
+}
+
 /* ********************************
 This is for the hamburger  icon
 ******************************** */
@@ -5,6 +12,14 @@ This is for the hamburger  icon
     content: "\2630";
     color: rgb(15, 14, 14);   
 }
+
+
+
+/* --primary-color: #0157EC;
+  --secondary-color: #EDBC23;
+  --accent1-color: #2F853E;
+  --accent2-color: #DF8FDB; */
+
 /* 
 ***********************
 The actual icon 
@@ -25,13 +40,13 @@ The actual icon
 ul.menuLinks li a {
     display: block;
     padding: .75rem 2vw;
-    color: rgb(253, 253, 253);
+    color: black;
     font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
 }
 li.currrent-menu-item a {
-    background-color: black;
+    background-color: rgb(10, 10, 10);
 } 
 ul.menuLinks {
     display: none;
@@ -44,3 +59,79 @@ ul.menuLinks {
 ul.menuLinks.open {
     display: block;
 } 
+/* 
+*****************
+main
+**************** */
+main {
+    background-color: antiquewhite;
+}
+h1, h2 {
+    text-align: center;
+}
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.message h3 {
+    border-top: solid blue;
+    margin-top: 0;
+    padding-top: 1rem;
+    color: #EDBC23;
+    text-align: center;
+}
+
+.message p {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: .5rem;
+    margin-bottom: 0px;
+    padding-bottom: 1rem;
+}
+
+
+/* ******************
+header and footer
+****************** */
+
+.title {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+}
+
+.title P {
+    grid-column: 2/3;
+}
+
+
+
+.logo, .linkedIn {
+    mix-blend-mode: multiply;
+}
+header, footer {
+    background: linear-gradient(to right, white, #0157EC);
+    
+}
+
+footer {
+    font-size: .85rem;
+    background-color: #056CF2;
+    color: black;
+    padding-bottom: 1px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.social img {
+    padding-left: 2rem;
+    width: 10%;
+    height: auto;
+}

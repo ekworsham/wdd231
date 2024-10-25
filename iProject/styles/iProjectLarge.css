@@ -1,0 +1,68 @@
+@media only screen and (min-width: 601px) {
+    nav {
+        grid-column: span 2;
+        text-align: center;
+        display: flex;
+        margin-left: 5em;
+    }
+
+    .title p {
+        font-size: 3rem;
+        margin: 0 auto;
+        margin-top: .5rem;
+    }
+
+    .heroImage {
+        width: 100%;
+    }
+
+    /* **********************
+    This is for nav 
+    ********************* */
+    .active {
+        background-color: #709df1;
+        border-radius: 10%;
+    }
+    #myButton {
+        display: none;
+    }
+    ul.menuLinks, ul.menuLinks.open {
+        display: contents;
+        
+    }
+    ul.menuLinks a:hover {
+        background-color: #aec0f5;
+    }
+
+    ul.menuLinks li a {
+        font-size: 1.25rem;
+    }
+
+    #cardView, #listView {
+        font-size: 1.5rem;
+    }
+
+    #buttonContainer {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 11vh; 
+    }
+
+    .contactList {
+        font-size: 2rem;
+    }
+
+
+    .social a img {
+        width: 50px;
+    }
+    .message {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 1.25rem;
+    }
+
+}
