@@ -17,7 +17,7 @@ hamburgerElement.addEventListener('click', () => {
 // ********************** 
 const whoResources = [
     {
-        "business": "Blacksmith of Whoville",
+        "business": "Blacksmith",
         "contactInfo": [
             "ADDRESS: 42 Horton Ave.",
             "WHO PHONE: 1-800-Who-Work",
@@ -25,7 +25,7 @@ const whoResources = [
         ]
     },
     {
-        "business": "The Grinch-Trash Service",
+        "business": "Grinch-Trash-Service",
         "contactInfo": [
             "ADDRESS: 1 Mt. Crumpit Overlook",
             "WHO PHONE: 1-800-GRINCH",
@@ -33,7 +33,7 @@ const whoResources = [
         ]
     },
     {
-        "business": "Whoville Electric",
+        "business": "Electric",
         "contactInfo": [
             "ADDRESS: 18 Main St.",
             "WHO PHONE: 1-800-SPARKY",
@@ -41,7 +41,7 @@ const whoResources = [
         ]
     },
     {
-        "business": "Who Plumbing",
+        "business": "Plumbing",
         "contactInfo": [
             "ADDRESS: 202 Clover Flower Blvd.",
             "WHO PHONE: 1-800-PIPES",
@@ -49,7 +49,7 @@ const whoResources = [
         ]
     },
     {
-        "business": "Whoville Water Department",
+        "business": "Water-Department",
         "contactInfo": [
             "ADDRESS: 812 Springs Rd.",
             "WHO PHONE: 1-800-YOUR-H20",
@@ -57,7 +57,7 @@ const whoResources = [
         ]
     },
     {
-        "business": "Handy Who",
+        "business": "Handy-Who",
         "contactInfo": [
             "ADDRESS: 4339 Snowflake Ln.",
             "WHO PHONE: 1-800-HANDY",
@@ -90,7 +90,7 @@ if (whoResourcesElement) {
             })
     }
 
-    
+
 
 // *****************************
 // Create resource modal
