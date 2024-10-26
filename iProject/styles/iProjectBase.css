@@ -135,3 +135,87 @@ footer {
     width: 10%;
     height: auto;
 }
+
+/* ***********************
+About Us Page 
+**************************/
+.about {
+    margin-top: 0;
+    padding-top: 2rem;
+}
+.special {
+    text-align: center;
+}
+
+.aboutUsMessage p {
+    padding: 0 1rem 1rem 1rem;
+    margin: 0 auto;
+}
+.whos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.whos img {
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+}
+
+/* ***********************
+Resource Page 
+**************************/
+#who-form, #who-level {
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: .5rem;
+}
+#who-level {
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: .5rem;
+    margin-top: 1rem;
+}
+
+.whoContainer input, .formContainer textarea {
+    background-color: #7cb5ff;
+    max-width: 320px;
+    width: 95%;
+    color:black;
+    box-shadow: 0 4px 10px black;
+    
+}
+
+.whoContainer ::placeholder{
+    color: black;
+}
+.whoContainer h2 {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.whoContainer input {
+    margin-bottom: 1rem;
+}
+
+.whoContainer {
+    padding-left: .5rem;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.who-levels div {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    background-color: tan;
+    border-bottom-right-radius: 1rem;
+    animation: fadeIn 7s;
+}

@@ -1,46 +1,42 @@
 @media only screen and (max-width: 600px) {
-header {
-    display: grid;
-    grid-template-columns: 65px 1fr;
+    header {
+        display: grid;
+        grid-template-columns: 65px 1fr;
+    }
+
+    figure {
+        margin: 0 auto;
+    }
+
+    .label {
+        font-weight: 600;
+    }
+
+
+
+    /* Basic styling for the sidebar */
+    #sidebar {
+        width: 265px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        position: fixed;
+        top: 55px;
+        right: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 2px;
+    }
+
+    /* *****************************
+    Styling for the visit message
+    ***************************** */
+    #visit-message {
+        font-size: 1em;
+        color: #333;
+    }
+
 }
-
-figure {
-    margin: 0 auto;
-}
-
-.label {
-    font-weight: 600;
-}
-
-
-
-/* Basic styling for the sidebar */
-#sidebar {
-    width: 265px;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    position: fixed;
-    top: 55px;
-    right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    padding: 2px;
-}
-
-/* *****************************
-Styling for the visit message
-***************************** */
-#visit-message {
-    font-size: 1em;
-    color: #333;
-}
-
-}
-
-
-
-
 
 img {
     max-width: 320px;

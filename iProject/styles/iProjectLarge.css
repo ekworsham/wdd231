@@ -53,16 +53,18 @@
         font-size: 2rem;
     }
 
-
     .social a img {
         width: 50px;
+        padding-top: 3.5rem;  
     }
+
     .message {
         font-size: 1.5rem;
     }
 
     footer {
         font-size: 1.25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-
 }

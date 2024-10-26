@@ -47,8 +47,40 @@
     </header>
 
     <main>
-        
+        <div class="whoContainer">
+            <form method="get" action="whoThankYou.html">
+                <label>
+                    <h2><b>Resident Contact Info</b></h2>
+                    Who First Name:
+                    <input type="text" name="firstName" title="name" autocomplete="given-name" required>
+                </label>
+                <label>
+                    Who Last Name:
+                    <input type="text" name="lastName" title="name" autocomplete="given-name" required>
+                </label>
+                <label>
+                    Email Address:
+                    <input type="email" name="email" title="email"  autocomplete="email" placeholder = "whos@whoville.com" required>
+                </label>
+                <label>
+                    Who Phone:
+                    <input type="tel" name="mobile" title="number"  autocomplete="tel" placeholder="(555) 123-WHO1" required>
+                </label>
+                <label>
+                    Request Details:
+                    <textarea name="ReqDetails" title="Details"></textarea>
+                </label>
+                <label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Whoosh-it-over">
+                </label>
+            </form>
 
+            <div class="who-resources">
+               <h3 id="who-resourse">Resident Resource</h3> 
+            </div>
+            <dialog class="who-box"></dialog>
+        </div>
     </main>
 
 
