@@ -110,8 +110,6 @@ header and footer
     grid-column: 2/3;
 }
 
-
-
 .logo, .linkedIn {
     mix-blend-mode: multiply;
 }
@@ -211,11 +209,99 @@ Resource Page
     }
 }
 
-.who-levels div {
+.who-resources div {
     margin-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
-    background-color: tan;
-    border-bottom-right-radius: 1rem;
+    margin-right: 1rem;
+    background-color: #7cb5ff;;
+    border-radius: 1rem;
     animation: fadeIn 7s;
 }
+
+
+
+/* ****************************
+Community Events Page 
+**************************** */
+.eventTitle {
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.event-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 30%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    background-color: rgb(173, 193, 230);
+    
+}
+
+#eventInfo {
+    max-width: 15rem;
+    background-color: rgb(173, 193, 230);
+}
+
+#eventInfo h2, #eventInfo p {
+    font-size: 1rem;
+}
+
+  /* *****************************
+  Basic styling for the sidebar 
+  ****************************** */
+  #sidebar {
+    width: 265px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    position: fixed;
+    top: 55px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 2px;
+}
+
+/* *****************************
+Styling for the visit message
+***************************** */
+#visit-message {
+    font-size: 1em;
+    color: #333;
+}
+
+/*
+*****************************
+ Resident Resourcse 
+ ****************************/
+ .label {
+    font-size: 1.1rem;
+ }
+
+/*
+*****************************
+ Thank you page
+ ****************************/
+
+ #thankYou p {
+    margin-left: 1rem;
+}
+
+#thankYou {
+    padding-bottom: 1rem;
+}
+ #thankYouPage h2 {
+    padding-top: 1rem;
+    margin-top: 0;
+ }

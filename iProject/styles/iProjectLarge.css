@@ -67,4 +67,37 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+/* *********************************
+    This is for residence resource
+************************************/
+form, #membership-Form {
+    max-width: 330px;
+    margin-left: 2rem;
+    
+ }
+ 
+ #membership-form {
+   text-align: left; 
+   margin-bottom: 1rem; 
+ }
+ 
+ .whoContainer {
+     display: grid;
+     grid-template-columns:1fr 1fr;
+ }
+ 
+ #who-resource {
+     margin: 0 auto;
+     padding-bottom: 0;
+     padding-top: 0;
+     font-size: 1.1rem;
+ }
+
+ .menuLinks {
+     margin-left: 25rem;
+     flex-wrap: wrap;
+ }
+ 
+
 }
